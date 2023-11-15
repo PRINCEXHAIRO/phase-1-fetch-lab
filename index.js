@@ -8,12 +8,12 @@ function fetchBooks() {
 }
 
 function renderBooks(data){
+  const main = document.getElementById('main')
 // only able to access objects within data by using forEach 
   data.forEach(data => {
-    const h1 = document.createElement('h1')
-    h1.innerHTML = data.name;
-    const main = document.getElementById('main')
-    main.appendChild(h1)
+    const h2 = document.createElement('h2')
+    h2.innerHTML = data.name;
+    main.appendChild(h2)
   });
 };
 
